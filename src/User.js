@@ -8,6 +8,7 @@ class User {
     this.email = user.email;
     this.strideLength = user.strideLength;
     this.dailyStepGoal = user.dailyStepGoal;
+    this.friends = user.friends;
   }
 
   returnFirstName() {
