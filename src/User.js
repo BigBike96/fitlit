@@ -6,6 +6,7 @@ class User {
     this.name = user.name;
     this.address = user.address;
     this.email = user.email;
+    this.strideLength = user.strideLength;
   }
 
   returnFirstName() {
