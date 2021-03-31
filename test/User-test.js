@@ -43,4 +43,8 @@ describe('User', () => {
   it('should take in a user stride length', () => {
     expect(user.strideLength).to.equal(4.3);
   });
+
+  it('should take in a user daily step goal', () => {
+    expect(user.dailyStepGoal).to.equal(10000);
+  });
 })

@@ -7,6 +7,7 @@ class User {
     this.address = user.address;
     this.email = user.email;
     this.strideLength = user.strideLength;
+    this.dailyStepGoal = user.dailyStepGoal;
   }
 
   returnFirstName() {
