@@ -35,4 +35,8 @@ describe('User', () => {
   it('should take in a user address', () => {
     expect(user.address).to.equal("15195 Nakia Tunnel, Erdmanport VA 19901-1697");
   });
+
+  it('should take in a user email', () => {
+    expect(user.email).to.equal("Diana.Hayes1@hotmail.com");
+  });
 })
