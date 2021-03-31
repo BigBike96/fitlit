@@ -42,4 +42,8 @@ describe('UserRepository', () => {
     // expect(userID).to.deep.equal(userRepository.users[0]);
   });
 
+  it('should calculate the average of all users step goals', () => {
+    expect(userRepository.calculateAvgStepGoals()).to.equal(7500);
+  });
+
 });
