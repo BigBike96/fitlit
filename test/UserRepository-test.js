@@ -33,6 +33,13 @@ describe('UserRepository', () => {
 
   it('should take in all user data', () => {
     expect(userRepository.users[0]["id"]).to.equal(1);
+    expect(userRepository.users[1]["id"]).to.equal(2);
+  });
+
+  it('should find a user by ID', () => {
+    expect(userRepository.findUserById(1)).to.deep.equal(userRepository.users[0]);
+    // const userID = userRepository.findUserById(1);
+    // expect(userID).to.deep.equal(userRepository.users[0]);
   });
 
 });
