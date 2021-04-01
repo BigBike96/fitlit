@@ -14,16 +14,14 @@ class HydrationRepository {
     const daysOunces = userData.filter(element => element.date === date);
     return daysOunces[0].numOunces;
   }
-  //
-  // calculateAllTimeOunces() {
-  //   //-iterate through all data
-  //   //using an id to take objects with matching id and
-  //   //-placing them in a new array
-  //   //-iterate through new array,
-  //   //- for each obj? add all fluid ounces of each day
-  //   //- return divided sum by the arrays.length
-  // }
-  //
+
+  calculateAllTimeOunces(id) {
+    const userData = this.hydrationData.filter(element => element.userID === id);
+    let sum = 0;
+    userData.forEach(element => sum += element.numOunces);
+    return sum / userData.length;
+  }
+
   // returnWeeksOunces() {
   //   //!SPICY! date.js?
   //   //-"using some week identifier"
