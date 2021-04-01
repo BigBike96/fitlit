@@ -40,8 +40,12 @@ describe('HydrationRepository', () => {
      expect(hydrationRepository.returnDaysOunces(3, "2019/06/17")).to.equal(9);
    });
 
-   it.skip('should return average fluid ounces consumed all time for user', () => {
-     expect(hydrationRepository.calculateAllTimeOunces).to.equal();
-   })
+   it('should return average fluid ounces consumed all time for user', () => {
+     expect(hydrationRepository.calculateAllTimeOunces(3)).to.equal(6);
+   });
+
+   // it.skip('should', () => {
+   //   expect(hydrationRepository.).to.
+   // });
 
 });
