@@ -86,3 +86,5 @@ const sampleHydration = [{
   "numOunces": 17
 }
 ];
+
+module.exports = sampleHydration;
