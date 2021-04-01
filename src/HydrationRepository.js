@@ -10,7 +10,18 @@ class HydrationRepository {
     return usersData;
   }
 
-
+  returnDaysOunces(id, date) {
+    //-using a date
+    //-return the total ounces that user data object
+    //contains
+    const userData = this.hydrationData.filter(element => element.userID === id);
+    const daysOunces = userData.filter(element => element.date === date);
+    return daysOunces[0].numOunces;
+    //console.log(daysOunces.element);
+    //return daysOunces.numOunces;
+    //const daysOunces = userData.filter(element => element.date === date);
+    //return daysOunces;
+  }
   //
   // calculateAllTimeOunces() {
   //   //-iterate through all data
