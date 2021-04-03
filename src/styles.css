@@ -1,1 +1,7 @@
 /* css */
+
+.body {
+  background: linear-gradient(#16222a, #3a6073);
+  background-attachment: fixed;
+  text-align: center;
+}
