@@ -17,3 +17,9 @@
   border: solid 3px red;
   margin: 0 2em 2em 2em;
 }
+
+.health-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
