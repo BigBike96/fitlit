@@ -30,3 +30,10 @@
   border: solid 3px red;
   margin: 0 2em 2em 2em;
 }
+
+.hydration-data {
+  background: linear-gradient(#2980b9, #6dd5fa, #ffffff);
+  background-attachment: fixed;
+  border: solid 3px red;
+  margin: 0 2em 2em 2em;
+}
