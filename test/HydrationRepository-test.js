@@ -10,12 +10,8 @@ describe('HydrationRepository', () => {
 
   beforeEach(() => {
     hydrationRepository = new HydrationRepository(sampleData);
-    // hydrationRepository1 = new HydrationRepository(sampleData.sampleHydration[1]);
   });
 
-
-  // 2. returnDaysOunces()
-  // -returns only the ounces for 1 specific day
 
   // 3. calculateAllTimeOunces()
   // -has an array of hydro data that all shares same id
@@ -44,8 +40,25 @@ describe('HydrationRepository', () => {
      expect(hydrationRepository.calculateAllTimeOunces(3)).to.equal(6);
    });
 
-   // it.skip('should', () => {
-   //   expect(hydrationRepository.).to.
-   // });
+   it('should return ounces for every day of a week', () => {
+     //we will use user 1 sample data for this test
+     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/15")).to.deep.equal(
+       [1, 4, 7, 10, 12, 14, 16]
+     );
+   });
+
+   it('should return ounces each day for the week', () => {
+     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal({
+       4 : '2019/06/16',
+       7 : '2019/06/17',
+       10 : '2019/06/18',
+       12 : '2019/06/19',
+       14 : '2019/06/20',
+       16 : '2019/06/21',
+       18 : '2019/06/22'
+     });
+   });
+
+
 
 });
