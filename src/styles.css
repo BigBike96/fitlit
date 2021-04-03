@@ -5,3 +5,9 @@
   background-attachment: fixed;
   text-align: center;
 }
+
+.user-selection {
+  background-color: yellow;
+  border: solid 3px red;
+  margin: 0 2em 2em 2em;
+}
