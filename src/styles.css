@@ -37,3 +37,10 @@
   border: solid 3px red;
   margin: 0 2em 2em 2em;
 }
+
+.sleep-data {
+  background: linear-gradient(#0575e6, #021b79);
+  background-attachment: fixed;
+  border: solid 3px red;
+  margin: 0 2em 2em 2em;
+}
