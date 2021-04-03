@@ -23,3 +23,10 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
+
+.activity-data {
+  background: linear-gradient(#333333, #dd1818);
+  background-attachment: fixed;
+  border: solid 3px red;
+  margin: 0 2em 2em 2em;
+}
