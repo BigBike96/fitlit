@@ -10,13 +10,14 @@
   background-color: yellow;
   border: solid 3px red;
   margin: 0 2em 2em 2em;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .user-card {
   background-color: white;
   border: solid 3px red;
   margin: 0 2em 2em 2em;
+  border-radius: 20px;
 }
 
 .health-data {
@@ -30,6 +31,7 @@
   background-attachment: fixed;
   border: solid 3px red;
   margin: 0 2em 2em 2em;
+  border-radius: 20px;
 }
 
 .hydration-data {
@@ -37,6 +39,7 @@
   background-attachment: fixed;
   border: solid 3px red;
   margin: 0 2em 2em 2em;
+  border-radius: 20px;
 }
 
 .sleep-data {
@@ -44,4 +47,5 @@
   background-attachment: fixed;
   border: solid 3px red;
   margin: 0 2em 2em 2em;
+  border-radius: 20px;
 }
