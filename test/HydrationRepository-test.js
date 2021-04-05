@@ -40,12 +40,12 @@ describe('HydrationRepository', () => {
      expect(hydrationRepository.calculateAllTimeOunces(3)).to.equal(6);
    });
 
-   it('should return ounces for every day of a week', () => {
-     //we will use user 1 sample data for this test
-     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/15")).to.deep.equal(
-       [1, 4, 7, 10, 12, 14, 16]
-     );
-   });
+   // it('should return ounces for every day of a week', () => {
+   //   //we will use user 1 sample data for this test
+   //   expect(hydrationRepository.returnWeeksOunces(1, "2019/06/15")).to.deep.equal(
+   //     [1, 4, 7, 10, 12, 14, 16]
+   //   );
+   // });
 
    it('should return ounces each day for the week', () => {
      expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal({
