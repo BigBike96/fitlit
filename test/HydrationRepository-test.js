@@ -48,15 +48,15 @@ describe('HydrationRepository', () => {
    // });
 
    it('should return ounces each day for the week', () => {
-     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal({
-       4 : '2019/06/16',
-       7 : '2019/06/17',
-       10 : '2019/06/18',
-       12 : '2019/06/19',
-       14 : '2019/06/20',
-       16 : '2019/06/21',
-       18 : '2019/06/22'
-     });
+     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal([
+       {4 : '2019/06/16'},
+       {7 : '2019/06/17'},
+       {10 : '2019/06/18'},
+       {12 : '2019/06/19'},
+       {14 : '2019/06/20'},
+       {16 : '2019/06/21'},
+       {18 : '2019/06/22'}
+     ]);
    });
 
 
