@@ -46,25 +46,25 @@ describe('HydrationRepository', () => {
 
   it('should return ounces each day for the week', () => {
     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal([{
-        4: '2019/06/16'
+        userID: 1, date: '2019/06/16', numOunces: 4
       },
       {
-        7: '2019/06/17'
+        userID: 1, date: '2019/06/17', numOunces: 7
       },
       {
-        10: '2019/06/18'
+        userID: 1, date: '2019/06/18', numOunces: 10
       },
       {
-        12: '2019/06/19'
+        userID: 1, date: '2019/06/19', numOunces: 12
       },
       {
-        14: '2019/06/20'
+        userID: 1, date: '2019/06/20', numOunces: 14
       },
       {
-        16: '2019/06/21'
+        userID: 1, date: '2019/06/21', numOunces: 16
       },
       {
-        18: '2019/06/22'
+        userID: 1, date: '2019/06/22', numOunces: 18
       }
     ]);
   });
