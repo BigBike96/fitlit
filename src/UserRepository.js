@@ -19,7 +19,6 @@ class UserRepository {
   }
 }
 
-//module.exports = UserRepository;
 
 if (typeof module !== 'undefined') {
   module.exports = UserRepository;
