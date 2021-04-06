@@ -6,6 +6,7 @@ const personalStepGoal = document.querySelector('#personalStepGoal');
 const averageStepGoal = document.querySelector('#groupAverageStepGoal');
 const userSelection = document.querySelector('#userSelection');
 
+
 // Global Variables
 const userRepo = new UserRepository(userData);
 const currentUser = new User(userData[getRandomIndex(userData)]);;
@@ -16,7 +17,7 @@ const hydration = new HydrationRepository(hydrationData);
 // Event Listeners
 window.addEventListener('load', loadUserData);
 // userSelection.addEventListener('', );
-
+     
 //DOM Functions
 function loadUserData() {
   // helper function to invoke other functions
@@ -45,5 +46,5 @@ function displayUserData() {
   //<p>Friends: ${currentUser.friends}</p>
   userHydration.innerHTML += `
   <p>Ounces drank this day: ${hydration.returnDaysOunces(currentUser.id, "2019/06/15")}</p>
-  <p>Ounces drank this week: ${hydration.calculateAllTimeOunces(2)}</p>`
+  <p>Ounces drank this week: ${hydration.calculateAllTimeOunces(currentUser.id)}</p>`
 }
