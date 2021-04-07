@@ -69,13 +69,16 @@ class SleepRepository {
      // output: user names of users whos sleep quality is > 3 average for week
      const sleeperData = this.sleepData.filter(element => element.date === date);
      const sleepWeek = sleeperData.slice(dateIndex - 6, dateIndex + 1);
-     
+
      const dateIndex = sleeperData.indexOf(sleepQuality);
 
   }
 
-  findWhoSleptMost() {
+  findWhoSleptMost(date) {
     // 9. For a given day (identified by the date), find the users who slept the most number of hours (one or more if they tied)
+      // input: all user objects for a given day
+      const hoursSlept = sleepData.filter(element => element.date === date);
+      
 
   }
 }
