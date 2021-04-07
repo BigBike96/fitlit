@@ -1,8 +1,6 @@
 const userName = document.querySelector('#userName');
 const userInfo = document.querySelector('#userData');
 const userHydration = document.querySelector('#hydrationData');
-const personalStepGoal = document.querySelector('#personalStepGoal');
-const averageStepGoal = document.querySelector('#groupAverageStepGoal');
 const userSelection = document.querySelector('#userSelection');
 const sleepInfo = document.querySelector('#sleepData');
 
