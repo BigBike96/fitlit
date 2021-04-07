@@ -90,7 +90,7 @@ describe('SleepRepository', () => {
     ]);
   });
 
-  it('should calculate average sleep quality of all users',() => {
+  it('should calculate average sleep quality of all users', () => {
     expect(sleepRepository.averageSleepQualityForAll()).to.equal(3.36);
   });
 
@@ -98,9 +98,9 @@ describe('SleepRepository', () => {
   //   expect()
   // });
   //
-  // it.skip('', => {
-  //   expect()
-  // });
+   it('should return user with most hours slept on a given day', () => {
+     expect(sleepRepository.findWhoSleptMost("2019/06/15")).to.equal(3);
+   });
 })
 
 // const sleepData = [
