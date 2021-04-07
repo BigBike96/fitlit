@@ -1,4 +1,3 @@
-// user repo test   //
 const chai = require('chai');
 const expect = chai.expect;
 
@@ -38,12 +37,9 @@ describe('UserRepository', () => {
 
   it('should find a user by ID', () => {
     expect(userRepository.findUserById(1)).to.deep.equal(userRepository.users[0]);
-    // const userID = userRepository.findUserById(1);
-    // expect(userID).to.deep.equal(userRepository.users[0]);
   });
 
   it('should calculate the average of all users step goals', () => {
     expect(userRepository.calculateAvgStepGoals()).to.equal(7500);
   });
-
 });
