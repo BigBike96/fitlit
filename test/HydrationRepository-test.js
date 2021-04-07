@@ -1,4 +1,3 @@
-// hydration repository
 const chai = require('chai');
 const expect = chai.expect;
 const sampleData = require('../test/sampleData');
@@ -46,25 +45,39 @@ describe('HydrationRepository', () => {
 
   it('should return ounces each day for the week', () => {
     expect(hydrationRepository.returnWeeksOunces(1, "2019/06/22")).to.deep.equal([{
-        userID: 1, date: '2019/06/16', numOunces: 4
+        userID: 1,
+        date: '2019/06/16',
+        numOunces: 4
       },
       {
-        userID: 1, date: '2019/06/17', numOunces: 7
+        userID: 1,
+        date: '2019/06/17',
+        numOunces: 7
       },
       {
-        userID: 1, date: '2019/06/18', numOunces: 10
+        userID: 1,
+        date: '2019/06/18',
+        numOunces: 10
       },
       {
-        userID: 1, date: '2019/06/19', numOunces: 12
+        userID: 1,
+        date: '2019/06/19',
+        numOunces: 12
       },
       {
-        userID: 1, date: '2019/06/20', numOunces: 14
+        userID: 1,
+        date: '2019/06/20',
+        numOunces: 14
       },
       {
-        userID: 1, date: '2019/06/21', numOunces: 16
+        userID: 1,
+        date: '2019/06/21',
+        numOunces: 16
       },
       {
-        userID: 1, date: '2019/06/22', numOunces: 18
+        userID: 1,
+        date: '2019/06/22',
+        numOunces: 18
       }
     ]);
   });
