@@ -1,4 +1,3 @@
-// hydration repository
 class HydrationRepository {
   constructor(data) {
     this.hydrationData = data;
@@ -27,14 +26,9 @@ class HydrationRepository {
     const hydroDate = userData.find(element => element.date === date);
     const dateIndex = userData.indexOf(hydroDate);
     const week = userData.slice(dateIndex - 6, dateIndex + 1);
-    // POSS NEEDED IF CHARTS PLUGIN IS USED
-    // const ouncesPerDay = week.map(element => ({[element.numOunces]: element.date}));
-    // return ouncesPerDay;
     return week;
   }
 }
-
-// module.exports = HydrationRepository;
 
 if (typeof module !== 'undefined') {
   module.exports = HydrationRepository;
