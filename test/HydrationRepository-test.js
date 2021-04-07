@@ -9,7 +9,7 @@ describe('HydrationRepository', () => {
   let hydrationRepository;
 
   beforeEach(() => {
-    hydrationRepository = new HydrationRepository(sampleData);
+    hydrationRepository = new HydrationRepository(sampleData.sampleHydration);
   });
 
   it('should instantiate a Hydration Repository', () => {

@@ -1,5 +1,4 @@
 // user repository
-//
 
 class UserRepository {
   constructor(data) {
