@@ -77,8 +77,15 @@ class SleepRepository {
   findWhoSleptMost(date) {
     // 9. For a given day (identified by the date), find the users who slept the most number of hours (one or more if they tied)
       // input: all user objects for a given day
-      const hoursSlept = sleepData.filter(element => element.date === date);
-      
+      const dateHoursSlept = this.sleepData.filter(element => element.date === date);
+      // need to figure which hoursSlept is greatest
+      const greatestHoursSlept = dateHoursSlept.sort((element, element2) => {
+        // let controlElement = element.hoursSlept;
+      const  element - element2;
+
+        console.log(controlElement);
+      })
+
 
   }
 }
