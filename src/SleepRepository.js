@@ -62,8 +62,16 @@ class SleepRepository {
     return averageSleepQuality;
   }
 
-  findGreaterThanThree(){
-    // 8. Find all users who average a sleep quality greater than 3 for a given week (7 days) - you should be able to calculate this for any week, not just the latest week
+  findGreaterThanThree(date){
+    // 8. Find all users who average a sleep quality greater than 3 for a given week (7 days)
+     // - you should be able to calculate this for any week, not just the latest week
+     // input: all user objects for a given 7 day span
+     // output: user names of users whos sleep quality is > 3 average for week
+     const sleeperData = this.sleepData.filter(element => element.date === date);
+     const sleepWeek = sleeperData.slice(dateIndex - 6, dateIndex + 1);
+     
+     const dateIndex = sleeperData.indexOf(sleepQuality);
+
   }
 
   findWhoSleptMost() {
