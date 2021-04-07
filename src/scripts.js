@@ -67,12 +67,30 @@ function displayHydroData() {
 }
 
 function displaySleepData() {
+  const weekHours = sleep.hoursForWeek(currentUser.id, "2019/09/22");
+  let [ day1, day2, day3, day4, day5, day6, day7 ] = weekHours;
   sleepInfo.innerHTML += `
-  <p>Latest Day Hours: </p>
-  <p>Latest Day Quality: </p>
-  <p>This Weeks Hours: </p>
-  <p>This Weeks Quality: </p>
-  <p>All Time Average Hours: </p>
-  <p>All Time Average Quality: </p>
+  <p>Latest Day Hours: ${sleep.hoursForDay(currentUser.id, "2019/09/22")}</p>
+  <p>Latest Day Quality: ${sleep.qualityForDay(currentUser.id, "2019/09/22")}</p>
+  <p>Hours Slept this week: <br>
+  ${day1.hoursSlept} :  ${day1.date}<br>
+  ${day2.hoursSlept} :  ${day2.date}<br>
+  ${day3.hoursSlept} :  ${day3.date}<br>
+  ${day4.hoursSlept} :  ${day4.date}<br>
+  ${day5.hoursSlept} :  ${day5.date}<br>
+  ${day6.hoursSlept} :  ${day6.date}<br>
+  ${day7.hoursSlept} :  ${day7.date}<br>
+  </p>
+  <p>Quality of sleep this week: <br>
+  ${day1.sleepQuality} :  ${day1.date}<br>
+  ${day2.sleepQuality} :  ${day2.date}<br>
+  ${day3.sleepQuality} :  ${day3.date}<br>
+  ${day4.sleepQuality} :  ${day4.date}<br>
+  ${day5.sleepQuality} :  ${day5.date}<br>
+  ${day6.sleepQuality} :  ${day6.date}<br>
+  ${day7.sleepQuality} :  ${day7.date}<br>
+  </p>
+  <p>All Time Average Hours: ${sleep.averageSleepHours(currentUser.id)}</p>
+  <p>All Time Average Quality: ${sleep.averageSleepQuality(currentUser.id)}</p>
   `
 }
