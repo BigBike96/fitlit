@@ -1,5 +1,3 @@
-// user repository
-
 class UserRepository {
   constructor(data) {
     this.users = data;
@@ -17,7 +15,6 @@ class UserRepository {
     return averageStepGoal;
   }
 }
-
 
 if (typeof module !== 'undefined') {
   module.exports = UserRepository;
