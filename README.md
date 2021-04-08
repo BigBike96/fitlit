@@ -15,3 +15,8 @@ Refresh page to display data for different user.
 2. `git clone` it down to your command line
 3. Navigate into the root directory on your machine
 4. Run `open src/index.html`
+
+## Technologies Used
+1. JavaScript (vanilla)
+2. HTML
+3. CSS
