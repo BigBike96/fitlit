@@ -1,4 +1,3 @@
-// user
 class User {
   constructor(user) {
     this.id = user.id;
@@ -11,12 +10,10 @@ class User {
   }
 
   returnFirstName() {
-    // returns only the first name of the name string
     const firstName = this.name.split(" ");
     return firstName[0];
   }
 }
-
 
 if (typeof module !== 'undefined') {
   module.exports = User;

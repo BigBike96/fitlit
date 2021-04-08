@@ -1,4 +1,3 @@
-// sleep repos test
 const chai = require('chai');
 const expect = chai.expect;
 const sampleData = require('../test/sampleData');
@@ -37,89 +36,95 @@ describe('SleepRepository', () => {
   });
 
   it('should find hours slept each day during week', () => {
-    expect(sleepRepository.hoursForWeek(2, "2019/06/21")).to.deep.equal([
-      {
-        userID: 2, date: '2019/06/15', hoursSlept: 7, sleepQuality: 4.7
+    expect(sleepRepository.hoursForWeek(2, "2019/06/21")).to.deep.equal([{
+        userID: 2,
+        date: '2019/06/15',
+        hoursSlept: 7,
+        sleepQuality: 4.7
       },
       {
-        userID: 2, date: '2019/06/16', hoursSlept: 7.5, sleepQuality: 3.8
+        userID: 2,
+        date: '2019/06/16',
+        hoursSlept: 7.5,
+        sleepQuality: 3.8
       },
       {
-        userID: 2, date: '2019/06/17', hoursSlept: 5.7, sleepQuality: 3
+        userID: 2,
+        date: '2019/06/17',
+        hoursSlept: 5.7,
+        sleepQuality: 3
       },
       {
-        userID: 2, date: '2019/06/18', hoursSlept: 10.8, sleepQuality: 3.2
+        userID: 2,
+        date: '2019/06/18',
+        hoursSlept: 10.8,
+        sleepQuality: 3.2
       },
       {
-        userID: 2, date: '2019/06/19', hoursSlept: 9.6, sleepQuality: 2.5
+        userID: 2,
+        date: '2019/06/19',
+        hoursSlept: 9.6,
+        sleepQuality: 2.5
       },
       {
-        userID: 2, date: '2019/06/20', hoursSlept: 10.1, sleepQuality: 2.4
+        userID: 2,
+        date: '2019/06/20',
+        hoursSlept: 10.1,
+        sleepQuality: 2.4
       },
       {
-        userID: 2, date: '2019/06/21', hoursSlept: 4.3,sleepQuality: 4.8
+        userID: 2,
+        date: '2019/06/21',
+        hoursSlept: 4.3,
+        sleepQuality: 4.8
       }
 
     ]);
   });
 
   it('should find quality of sleep for each day during week', () => {
-    expect(sleepRepository.qualityForWeek(2, "2019/06/21")).to.deep.equal([
-      {
-        userID: 2, date: '2019/06/15', hoursSlept: 7, sleepQuality: 4.7
+    expect(sleepRepository.qualityForWeek(2, "2019/06/21")).to.deep.equal([{
+        userID: 2,
+        date: '2019/06/15',
+        hoursSlept: 7,
+        sleepQuality: 4.7
       },
       {
-        userID: 2, date: '2019/06/16', hoursSlept: 7.5, sleepQuality: 3.8
+        userID: 2,
+        date: '2019/06/16',
+        hoursSlept: 7.5,
+        sleepQuality: 3.8
       },
       {
-        userID: 2, date: '2019/06/17', hoursSlept: 5.7, sleepQuality: 3
+        userID: 2,
+        date: '2019/06/17',
+        hoursSlept: 5.7,
+        sleepQuality: 3
       },
       {
-        userID: 2, date: '2019/06/18', hoursSlept: 10.8, sleepQuality: 3.2
+        userID: 2,
+        date: '2019/06/18',
+        hoursSlept: 10.8,
+        sleepQuality: 3.2
       },
       {
-        userID: 2, date: '2019/06/19', hoursSlept: 9.6, sleepQuality: 2.5
+        userID: 2,
+        date: '2019/06/19',
+        hoursSlept: 9.6,
+        sleepQuality: 2.5
       },
       {
-        userID: 2, date: '2019/06/20', hoursSlept: 10.1, sleepQuality: 2.4
+        userID: 2,
+        date: '2019/06/20',
+        hoursSlept: 10.1,
+        sleepQuality: 2.4
       },
       {
-        userID: 2, date: '2019/06/21', hoursSlept: 4.3,sleepQuality: 4.8
+        userID: 2,
+        date: '2019/06/21',
+        hoursSlept: 4.3,
+        sleepQuality: 4.8
       }
-
     ]);
   });
-
-  it('should calculate average sleep quality of all users',() => {
-    expect(sleepRepository.averageSleepQualityForAll()).to.equal(3.36);
-  });
-
-  // it.skip('', => {
-  //   expect()
-  // });
-  //
-  // it.skip('', => {
-  //   expect()
-  // });
 })
-
-// const sleepData = [
-//   {
-//     "userID": 1,
-//     "date": "2019/06/15",
-//     "hoursSlept": 6.1,
-//     "sleepQuality": 2.2
-//   },
-//   {
-//     "userID": 2,
-//     "date": "2019/06/15",
-//     "hoursSlept": 7,
-//     "sleepQuality": 4.7
-//   },
-//   {
-//     "userID": 3,
-//     "date": "2019/06/15",
-//     "hoursSlept": 10.8,
-//     "sleepQuality": 4.7
-//   }
-// ]
