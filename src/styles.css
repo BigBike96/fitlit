@@ -2,20 +2,26 @@
   background: linear-gradient(#16222a, #3a6073);
   background-attachment: fixed;
   text-align: center;
+  font-size: 25px;
+  font-family: "Comic Sans MS";
 }
 
 .user-selection {
-  background-color: yellow;
-  border: solid 3px red;
+  background: linear-gradient(#c6ffdd, #fbd786, #f7797d);
+  background-attachment: fixed;
   margin: 0 2em 2em 2em;
   border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  font-size: 25px;
+  font-family: "Comic Sans MS";
 }
 
 .user-card {
-  background-color: white;
-  border: solid 3px red;
+  background: linear-gradient(#ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  background-attachment: fixed;
   margin: 0 2em 2em 2em;
   border-radius: 20px;
+  padding-bottom: 2px;
 }
 
 .health-data {
@@ -25,9 +31,8 @@
 }
 
 .activity-data {
-  background: linear-gradient(#333333, #dd1818);
+  background: linear-gradient(#ef32d9, #89fffd);
   background-attachment: fixed;
-  border: solid 3px red;
   margin: 0 2em 2em 2em;
   border-radius: 20px;
 }
@@ -35,15 +40,13 @@
 .hydration-data {
   background: linear-gradient(#2980b9, #6dd5fa, #ffffff);
   background-attachment: fixed;
-  border: solid 3px red;
   margin: 0 2em 2em 2em;
   border-radius: 20px;
 }
 
 .sleep-data {
-  background: linear-gradient(#0575e6, #021b79);
+  background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
   background-attachment: fixed;
-  border: solid 3px red;
   margin: 0 2em 2em 2em;
   border-radius: 20px;
 }
