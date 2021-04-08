@@ -20,3 +20,9 @@ Refresh page to display data for different user.
 1. JavaScript (vanilla)
 2. HTML
 3. CSS
+
+## Future Iterations
+- Select User dropdown menu.
+- Activity data display.
+- Charts and graphs.
+- Calendar.
