@@ -22,6 +22,7 @@ function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
+
 function displayFirstName() {
   let firstName = currentUser.returnFirstName();
   userName.innerText = firstName;
